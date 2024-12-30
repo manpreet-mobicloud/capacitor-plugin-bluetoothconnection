@@ -131,6 +131,7 @@ public class BluetoothPlugin extends Plugin
         }
     }
 
+    @SuppressLint("MissingPermission")
     @PluginMethod
     public void scanForDevices(PluginCall call) {
       if (getPermissionState("bluetoothPermissions") != PermissionState.GRANTED) {
@@ -157,6 +158,7 @@ public class BluetoothPlugin extends Plugin
       // Register the broadcast receiver for found devices
       Context context = getContext();
       android.content.BroadcastReceiver receiver = new android.content.BroadcastReceiver() {
+        @SuppressLint("MissingPermission")
         @Override
         public void onReceive(Context context, Intent intent) {
           String action = intent.getAction();
@@ -201,6 +203,7 @@ public class BluetoothPlugin extends Plugin
       }, 10000);
     }
 
+    @SuppressLint("MissingPermission")
     @PluginMethod
     public void connectToDevice(PluginCall call)
     {
@@ -397,6 +400,7 @@ public class BluetoothPlugin extends Plugin
         // });
     }
 
+    @SuppressLint("MissingPermission")
     @PluginMethod
     public void disconnectDevice(PluginCall call)
     {
@@ -418,6 +422,7 @@ public class BluetoothPlugin extends Plugin
         }
     }
 
+    @SuppressLint("MissingPermission")
     private void readNextCharacteristic()
     {
         if (!readQueue.isEmpty())
