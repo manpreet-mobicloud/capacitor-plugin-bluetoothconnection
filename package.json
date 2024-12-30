@@ -1,7 +1,7 @@
 {
-  "name": "bluetooth",
+  "name": "capacitor-plugin-bluetoothconnection",
   "version": "0.0.1",
-  "description": "Plugin for Bluetooth Connection",
+  "description": "Plugin to connect with BLE IoT Devices",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -19,15 +19,18 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/intern131/device.git.git"
+    "url": "git+https://github.com/manpreet-mobicloud/capacitor-plugin-bluetoothconnection.git"
   },
   "bugs": {
-    "url": "https://github.com/intern131/device.git/issues"
+    "url": "https://github.com/manpreet-mobicloud/capacitor-plugin-bluetoothconnection.git/issues"
   },
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "BluetoothConnection",
+    "IoT",
+    "BLE"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
