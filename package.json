@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-bluetoothconnection",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plugin to connect with BLE IoT Devices",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
