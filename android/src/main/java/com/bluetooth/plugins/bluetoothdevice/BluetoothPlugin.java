@@ -41,7 +41,7 @@ import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 @CapacitorPlugin(
-  name = "BluetoothPlugin",
+  name = "Bluetooth",
   permissions = {
     @Permission(alias = "bluetoothPermissions", strings = {
       Manifest.permission.BLUETOOTH_SCAN,

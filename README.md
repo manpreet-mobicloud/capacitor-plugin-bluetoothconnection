@@ -1,11 +1,11 @@
 # bluetooth
 
-Plugin for Bluetooth Connection
+Plugin to connect with BLE IoT devices and perform required operations
 
 ## Install
 
 ```bash
-npm install bluetooth
+npm install capacitor-plugin-bluetoothbleconnection
 npx cap sync
 ```
 
