@@ -54,15 +54,15 @@ This method returns a list of discovered devices with their name and address.
 ### connectToDevice(...)
 
 ```typescript
-connectToDevice(options: { deviceAddress: string; }) => Promise<{ batteryLevel: number; manufacturerName: string; }>
+connectToDevice(options: { deviceName: string; deviceAddress: string; }) => Promise<{ batteryLevel: number; manufacturerName: string; }>
 ```
 
 Connects to a Bluetooth device using its device address.
 After successfully connecting, it retrieves the battery level and manufacturer name.
 
-| Param         | Type                                    | Description                                                             |
-| ------------- | --------------------------------------- | ----------------------------------------------------------------------- |
-| **`options`** | <code>{ deviceAddress: string; }</code> | The options for connecting to a device, including the device's address. |
+| Param         | Type                                                        | Description                                                             |
+| ------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **`options`** | <code>{ deviceName: string; deviceAddress: string; }</code> | The options for connecting to a device, including the device's address. |
 
 **Returns:** <code>Promise&lt;{ batteryLevel: number; manufacturerName: string; }&gt;</code>
 

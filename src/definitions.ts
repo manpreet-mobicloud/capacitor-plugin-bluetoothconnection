@@ -38,7 +38,7 @@ export interface BluetoothPlugin {
    * { batteryLevel: 85, manufacturerName: 'Device Manufacturer' }
    * ```
    */
-  connectToDevice(options: { deviceAddress: string }): Promise<{ batteryLevel: number; manufacturerName: string }>;
+  connectToDevice(options: {deviceName:string ,deviceAddress: string }): Promise<{ batteryLevel: number; manufacturerName: string }>;
 
   /**
    * Disconnects the currently connected Bluetooth device.
